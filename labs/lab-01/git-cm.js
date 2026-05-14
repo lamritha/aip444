@@ -6,7 +6,33 @@ require("dotenv").config({
   path: path.resolve(__dirname, "../../.env"),
 });
 
+function formatDate() {
+  const now = new Date();
+  return (
+    now.getFullYear() +
+    "-" +
+    String(now.getMonth() + 1).padStart(2, "0") +
+    "-" +
+    String(now.getDate()).padStart(2, "0") +
+    " " +
+    String(now.getHours()).padStart(2, "0") +
+    ":" +
+    String(now.getMinutes()).padStart(2, "0") +
+    ":" +
+    String(now.getSeconds()).padStart(2, "0")
+  );
+}
+
+console.log("git-cm: Developed by Amritha Lingeswaran - 116682246");
+console.log("Run Date: " + formatDate());
+console.log("--------------------------------------------------------------");
+
 const OPENROUTER_API_KEY = process.env.OPENROUTER_API_KEY;
+
+if (!OPENROUTER_API_KEY) {
+  console.log("❌ Error: OPENROUTER_API_KEY not found");
+  process.exit(1);
+}
 
 const MODELS = [
   "meta-llama/llama-3.3-70b-instruct:free",
@@ -53,23 +79,6 @@ const openai = new OpenAI({
   baseURL: "https://openrouter.ai/api/v1",
   apiKey: OPENROUTER_API_KEY,
 });
-
-function formatDate() {
-  const now = new Date();
-  return (
-    now.getFullYear() +
-    "-" +
-    String(now.getMonth() + 1).padStart(2, "0") +
-    "-" +
-    String(now.getDate()).padStart(2, "0") +
-    " " +
-    String(now.getHours()).padStart(2, "0") +
-    ":" +
-    String(now.getMinutes()).padStart(2, "0") +
-    ":" +
-    String(now.getSeconds()).padStart(2, "0")
-  );
-}
 
 async function getGitDiff() {
   try {
@@ -141,15 +150,6 @@ function sleep(ms) {
 }
 
 async function main() {
-  if (!OPENROUTER_API_KEY) {
-    console.log("❌ Error: OPENROUTER_API_KEY not found");
-    process.exit(1);
-  }
-
-  console.log("git-cm: Developed by Amritha Lingeswaran - 116682246");
-  console.log("Run Date: " + formatDate());
-  console.log("--------------------------------------------------------------");
-
   const diff = await getGitDiff();
 
   console.log("🤖 Generating commit message...");
