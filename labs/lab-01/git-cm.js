@@ -10,8 +10,7 @@ const OPENROUTER_API_KEY = process.env.OPENROUTER_API_KEY;
 
 const MODELS = [
   "meta-llama/llama-3.3-70b-instruct:free",
-  "google/gemma-2-9b-it:free",
-  "mistralai/mistral-7b-instruct:free",
+  "google/gemma-4-31b-it:free",
 ];
 
 const execAsync = util.promisify(exec);
