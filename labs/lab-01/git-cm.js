@@ -6,6 +6,8 @@ require("dotenv").config({
   path: path.resolve(__dirname, "../../.env"),
 });
 
+//Added comment
+
 function formatDate() {
   const now = new Date();
   return (
