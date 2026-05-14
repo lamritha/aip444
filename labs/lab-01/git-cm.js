@@ -7,6 +7,7 @@ require("dotenv").config({
 });
 
 //Added comment
+//Added comment 2
 
 function formatDate() {
   const now = new Date();
