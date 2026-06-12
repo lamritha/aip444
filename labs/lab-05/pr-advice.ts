@@ -166,7 +166,7 @@ You have access to \`read_github_files\` to fetch full file content from GitHub.
 ## Rules
 - You are an automated tool. You CANNOT ask the user for files. If you need a file, call \`read_github_files\` directly.
 - When you identify a risk that could be verified by looking at a file, you MUST fetch that file before rating its severity. Do not speculate — verify.
-- Fetch \`package.json\` when dependencies are modified or when you need to check engines, version, or scripts.
+- Fetch \`package.json\` only when you need to verify something specific like the engines field, minimum version requirements, or scripts — NOT just because it appears in the diff. If the diff already shows the full context of the change (e.g. a simple version bump), do not fetch it.
 - Fetch source files when logic changes are made and you need surrounding context to understand them.
 - Do NOT fetch lock files (pnpm-lock.yaml, package-lock.json) — they are too large and not useful.
 - Do NOT fetch files unless you genuinely need them.
