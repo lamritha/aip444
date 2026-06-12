@@ -20,7 +20,7 @@ interface GitHubFile {
   ref: string;
 }
 
-export async function readGitHubFiles(files: GitHubFile[]): Promise<string> {
+async function readGitHubFiles(files: GitHubFile[]): Promise<string> {
   const results: string[] = [];
   for (const file of files) {
     // Detect commit SHAs (7-40 hex chars) vs branch names raw.githubusercontent.com needs different URL format for each
