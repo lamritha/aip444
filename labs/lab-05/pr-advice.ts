@@ -23,12 +23,11 @@ interface GitHubFile {
 export async function readGitHubFiles(files: GitHubFile[]): Promise<string> {
   const results: string[] = [];
   for (const file of files) {
-    // If ref looks like a commit SHA (7-40 hex chars), use it directly
-    // Otherwise treat it as a branch name and add refs/heads/
+    // Detect commit SHAs (7-40 hex chars) vs branch names raw.githubusercontent.com needs different URL format for each
     const isCommitSha = /^[0-9a-f]{7,40}$/i.test(file.ref);
     const refPath = isCommitSha ? file.ref : `refs/heads/${file.ref}`;
     const url = `https://raw.githubusercontent.com/${file.owner}/${file.repo}/${refPath}/${file.path}`;
-    console.log(`Fetching file from: ${url}`);
+
     // Try the given ref first, then fallback to master/main
     let response = await fetch(url);
 
@@ -37,17 +36,22 @@ export async function readGitHubFiles(files: GitHubFile[]): Promise<string> {
       response = await fetch(fallbackUrl);
     }
 
+    // Automatically retry with master if main returns 404 because repos use different default branch names
     if (!response.ok && file.ref === "master") {
       const fallbackUrl = `https://raw.githubusercontent.com/${file.owner}/${file.repo}/refs/heads/main/${file.path}`;
       response = await fetch(fallbackUrl);
     }
 
+    //If both main and master fail, return a clear error message to the LLM
     if (!response.ok) {
       return `Error: Could not fetch ${file.path} - status ${response.status}`;
     }
+
     const content = await response.text();
     const lines = content.split("\n");
     let finalContent = content;
+
+    // If file exceeds 1000 lines, truncate to prevent using too many tokens
     if (lines.length > 1000) {
       finalContent =
         lines.slice(0, 1000).join("\n") +
