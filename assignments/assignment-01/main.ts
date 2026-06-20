@@ -6,6 +6,19 @@ import {
   maintainabilityCriticPrompt,
 } from "./prompts.js";
 import { readFileTool, ripgrepTool } from "./toolSchemas.js";
+import { writeFileSync } from "fs";
+import { runJudge } from "./judge.js";
+
+function generateDefaultFilename(): string {
+  const now = new Date();
+  const dd = String(now.getDate()).padStart(2, "0");
+  const mm = String(now.getMonth() + 1).padStart(2, "0");
+  const yyyy = now.getFullYear();
+  const hh = String(now.getHours()).padStart(2, "0");
+  const min = String(now.getMinutes()).padStart(2, "0");
+  const ss = String(now.getSeconds()).padStart(2, "0");
+  return `review-${dd}-${mm}-${yyyy}-${hh}-${min}-${ss}.html`;
+}
 
 async function main() {
   const options = parseArgs();
@@ -41,9 +54,16 @@ async function main() {
     );
   }
 
-  console.log(
-    JSON.stringify({ securityIssues, maintainabilityIssues }, null, 2),
+  const html = await runJudge(
+    securityIssues,
+    maintainabilityIssues,
+    options.debug,
   );
+
+  const outputPath = options.output ?? generateDefaultFilename();
+  writeFileSync(outputPath, html, "utf-8");
+
+  console.log(`Review complete. Report saved to: ${outputPath}`);
 }
 
 main();
