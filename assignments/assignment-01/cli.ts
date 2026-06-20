@@ -4,7 +4,7 @@ interface CliOptions {
   output: string | undefined;
 }
 
-function parseArgs(): CliOptions {
+export function parseArgs(): CliOptions {
   const args = process.argv.slice(2);
   const debug = args.includes("--debug");
   const file =

@@ -19,7 +19,7 @@ async function callAI(messages: any[], tools: any[]): Promise<any> {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        model: "openai/gpt-4o-mini",
+        model: "google/gemini-2.5-flash",
         messages: messages,
         tools: tools,
         response_format: {
@@ -66,7 +66,7 @@ export async function runReviewer(
     { role: "user", content: userContent },
   ];
 
-  const maxIterations = 5;
+  const maxIterations = 8;
   let iteration = 0;
 
   if (debug) console.error(`[${reviewerName}] Starting review...`);
