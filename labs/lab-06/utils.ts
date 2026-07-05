@@ -119,7 +119,7 @@ export async function rerankResults(
   const data = (await response.json()) as any;
 
   return data.results
-    .filter((r: any) => r.relevance_score >= 0.1)
+    .filter((r: any) => r.relevance_score >= 0.15)
     .map((r: any) => ({
       ...candidates[r.index],
       rerankScore: r.relevance_score,
