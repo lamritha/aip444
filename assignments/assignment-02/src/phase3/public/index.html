@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Job Application Advisor</title>
+  <style>
+    :root {
+      --bg: #f3f5f7;
+      --card: #ffffff;
+      --ink: #15202b;
+      --muted: #5f6f7f;
+      --line: #e2e8f0;
+      --accent: #0f766e;
+      --accent-dark: #0b5a54;
+      --danger: #b91c1c;
+      --danger-bg: #fef2f2;
+      --shadow: 0 18px 40px rgba(15, 23, 42, 0.1);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+      color: var(--ink);
+      background:
+        linear-gradient(160deg, #ecfeff 0%, #f8fafc 40%, #f0fdf4 100%);
+    }
+    .page {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 48px 20px 32px;
+    }
+    .hero {
+      text-align: center;
+      margin-bottom: 28px;
+    }
+    .hero h1 {
+      margin: 0 0 8px;
+      font-size: clamp(1.8rem, 4vw, 2.4rem);
+      letter-spacing: -0.03em;
+    }
+    .hero p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+    .panel {
+      background: var(--card);
+      border: 1px solid #e2e8f0;
+      border-radius: 20px;
+      padding: 28px;
+      box-shadow: var(--shadow);
+    }
+    .panel.hidden { display: none; }
+    .hero.hidden { display: none; }
+    .dropzone {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      min-height: 200px;
+      border: 2px dashed #94a3b8;
+      border-radius: 16px;
+      padding: 36px 20px;
+      text-align: center;
+      background: #f8fafc;
+      transition: border-color 0.15s, background 0.15s;
+      cursor: pointer;
+    }
+    .dropzone.dragover {
+      border-color: var(--accent);
+      background: #ecfdf5;
+    }
+    .dropzone strong {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 1.1rem;
+    }
+    .dropzone span {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+    .file-name {
+      margin-top: 14px;
+      color: var(--accent-dark);
+      font-weight: 600;
+      min-height: 1.4em;
+      text-align: center;
+    }
+    .actions {
+      margin-top: 18px;
+      display: flex;
+      justify-content: center;
+    }
+    button {
+      appearance: none;
+      border: none;
+      background: var(--accent);
+      color: white;
+      font-weight: 700;
+      font-size: 1rem;
+      padding: 12px 28px;
+      border-radius: 999px;
+      cursor: pointer;
+      transition: background 0.15s, transform 0.1s;
+    }
+    button:hover:not(:disabled) { background: var(--accent-dark); }
+    button:active:not(:disabled) { transform: translateY(1px); }
+    button:disabled {
+      opacity: 0.55;
+      cursor: not-allowed;
+    }
+    .status {
+      margin-top: 18px;
+      text-align: center;
+      color: var(--muted);
+      min-height: 1.5em;
+    }
+    .spinner {
+      width: 28px;
+      height: 28px;
+      border: 3px solid #ccfbf1;
+      border-top-color: var(--accent);
+      border-radius: 50%;
+      margin: 0 auto 10px;
+      animation: spin 0.8s linear infinite;
+      display: none;
+    }
+    .spinner.show { display: block; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .error {
+      display: none;
+      margin-top: 16px;
+      padding: 12px 14px;
+      border-radius: 12px;
+      background: var(--danger-bg);
+      color: var(--danger);
+      border: 1px solid #fecaca;
+      white-space: pre-wrap;
+    }
+    .error.show { display: block; }
+    .report-wrap {
+      display: none;
+    }
+    .report-wrap.show { display: block; }
+    .report-toolbar {
+      display: flex;
+      justify-content: flex-start;
+      margin-bottom: 16px;
+    }
+    #report-content .wrap {
+      max-width: none;
+      margin: 0;
+      padding: 0;
+    }
+    input[type="file"] { display: none; }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="hero" id="hero">
+      <h1>Job Application Advisor</h1>
+      <p>Upload a job posting PDF for legitimacy, fit, resume, cover letter, and interview guidance.</p>
+    </div>
+
+    <div class="panel" id="upload-card">
+      <form id="analyze-form">
+        <label class="dropzone" id="dropzone" for="pdf-input">
+          <strong>Drop a job posting PDF here</strong>
+          <span>or click to browse — PDF only</span>
+        </label>
+        <input id="pdf-input" name="pdf" type="file" accept="application/pdf,.pdf" />
+        <div class="file-name" id="file-name"></div>
+        <div class="actions">
+          <button type="submit" id="analyze-btn" disabled>Analyze</button>
+        </div>
+      </form>
+
+      <div class="status" id="status"></div>
+      <div class="spinner" id="spinner" aria-hidden="true"></div>
+      <div class="error" id="error"></div>
+    </div>
+
+    <div class="report-wrap" id="report-wrap">
+      <div class="report-toolbar">
+        <button type="button" id="analyze-another">Analyze Another</button>
+      </div>
+      <div id="report-content"></div>
+    </div>
+  </div>
+
+  <script>
+    const form = document.getElementById("analyze-form");
+    const input = document.getElementById("pdf-input");
+    const dropzone = document.getElementById("dropzone");
+    const fileName = document.getElementById("file-name");
+    const button = document.getElementById("analyze-btn");
+    const statusEl = document.getElementById("status");
+    const spinner = document.getElementById("spinner");
+    const errorEl = document.getElementById("error");
+    const reportWrap = document.getElementById("report-wrap");
+    const reportContent = document.getElementById("report-content");
+    const uploadCard = document.getElementById("upload-card");
+    const hero = document.getElementById("hero");
+    const analyzeAnother = document.getElementById("analyze-another");
+
+    const STATUS_MESSAGES = [
+      "Reading job posting…",
+      "Checking company legitimacy…",
+      "Scoring fit against your resume…",
+      "Building resume & interview guidance…",
+      "Generating your report…",
+    ];
+
+    let selectedFile = null;
+    let statusTimer = null;
+
+    function setError(message) {
+      errorEl.textContent = message || "";
+      errorEl.classList.toggle("show", Boolean(message));
+    }
+
+    function setLoading(isLoading) {
+      button.disabled = isLoading || !selectedFile;
+      spinner.classList.toggle("show", isLoading);
+      if (!isLoading) {
+        clearInterval(statusTimer);
+        statusTimer = null;
+        statusEl.textContent = "";
+      }
+    }
+
+    function startStatusCycle() {
+      let i = 0;
+      statusEl.textContent = STATUS_MESSAGES[0];
+      statusTimer = setInterval(() => {
+        i = (i + 1) % STATUS_MESSAGES.length;
+        statusEl.textContent = STATUS_MESSAGES[i];
+      }, 4000);
+    }
+
+    function chooseFile(file) {
+      if (!file) return;
+      if (file.type !== "application/pdf" && !file.name.toLowerCase().endsWith(".pdf")) {
+        setError("Please upload a PDF file.");
+        selectedFile = null;
+        fileName.textContent = "";
+        button.disabled = true;
+        return;
+      }
+      selectedFile = file;
+      fileName.textContent = file.name + " (" + Math.round(file.size / 1024) + " KB)";
+      button.disabled = false;
+      setError("");
+    }
+
+    function showUploadState() {
+      uploadCard.classList.remove("hidden");
+      hero.classList.remove("hidden");
+      reportWrap.classList.remove("show");
+      reportContent.innerHTML = "";
+      selectedFile = null;
+      input.value = "";
+      fileName.textContent = "";
+      button.disabled = true;
+      setError("");
+      statusEl.textContent = "";
+      spinner.classList.remove("show");
+    }
+
+    function mountReport(html) {
+      const doc = new DOMParser().parseFromString(html, "text/html");
+      let css = "";
+      doc.querySelectorAll("style").forEach((styleEl) => {
+        css += (styleEl.textContent || "")
+          .replace(/\bbody\s*\{/g, "#report-content {")
+          .replace(/:root/g, "#report-content");
+      });
+      const wrap = doc.querySelector(".wrap");
+      reportContent.innerHTML =
+        "<style>" + css + "</style>" + (wrap ? wrap.outerHTML : doc.body.innerHTML);
+    }
+
+    function showReportState(html) {
+      uploadCard.classList.add("hidden");
+      hero.classList.add("hidden");
+      mountReport(html);
+      reportWrap.classList.add("show");
+    }
+
+    input.addEventListener("change", () => {
+      chooseFile(input.files && input.files[0]);
+    });
+
+    ["dragenter", "dragover"].forEach((evt) => {
+      dropzone.addEventListener(evt, (e) => {
+        e.preventDefault();
+        dropzone.classList.add("dragover");
+      });
+    });
+    ["dragleave", "drop"].forEach((evt) => {
+      dropzone.addEventListener(evt, (e) => {
+        e.preventDefault();
+        dropzone.classList.remove("dragover");
+      });
+    });
+    dropzone.addEventListener("drop", (e) => {
+      const file = e.dataTransfer && e.dataTransfer.files && e.dataTransfer.files[0];
+      chooseFile(file);
+      if (file) {
+        const dt = new DataTransfer();
+        dt.items.add(file);
+        input.files = dt.files;
+      }
+    });
+
+    analyzeAnother.addEventListener("click", () => {
+      showUploadState();
+    });
+
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      if (!selectedFile) {
+        setError("Please choose a job posting PDF first.");
+        return;
+      }
+
+      setError("");
+      setLoading(true);
+      startStatusCycle();
+
+      const body = new FormData();
+      body.append("pdf", selectedFile);
+
+      try {
+        const res = await fetch("/analyze", { method: "POST", body });
+        const contentType = res.headers.get("content-type") || "";
+
+        if (!res.ok) {
+          let message = "Analysis failed (" + res.status + ")";
+          if (contentType.includes("application/json")) {
+            const data = await res.json();
+            message = data.error || message;
+          } else {
+            message = await res.text();
+          }
+          throw new Error(message);
+        }
+
+        const html = await res.text();
+        showReportState(html);
+        statusEl.textContent = "";
+      } catch (err) {
+        setError(err && err.message ? err.message : String(err));
+        statusEl.textContent = "";
+      } finally {
+        clearInterval(statusTimer);
+        statusTimer = null;
+        spinner.classList.remove("show");
+        button.disabled = !selectedFile;
+      }
+    });
+  </script>
+</body>
+</html>

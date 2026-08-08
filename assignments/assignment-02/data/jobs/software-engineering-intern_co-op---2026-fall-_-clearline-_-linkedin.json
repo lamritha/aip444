@@ -1,0 +1,66 @@
+{
+  "job_title": "Software Engineering Intern/Co-op - 2026 Fall",
+  "company_name": "Clearline",
+  "location": "Kitchener, ON",
+  "remote_status": "on-site",
+  "posting_age_days": 21,
+  "required_skills": [
+    "backend framework",
+    "Node",
+    "Rails",
+    "Django",
+    "front-end framework",
+    "React",
+    "Vue",
+    "SQL",
+    "Git",
+    "GitHub",
+    "AI-powered products",
+    "LLMs",
+    "voice",
+    "automation",
+    "workflows",
+    "AI coding tools",
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Product mindset",
+    "UI/UX polish",
+    "communication skills",
+    "collaboration",
+    "Bias for action",
+    "ownership"
+  ],
+  "preferred_skills": [
+    "computer-science",
+    "software-engineering",
+    "LLM tools"
+  ],
+  "experience_level": "Internship",
+  "education_requirements": "Enrolled in a computer-science, software-engineering, or related bachelor's program and eligible for a co-op/intern term (3rd-5th year preferred).",
+  "salary_range": {
+    "min": 60000,
+    "max": 80000,
+    "currency": "CAD",
+    "raw": "60K CAD/yr - 80K CAD/yr"
+  },
+  "key_responsibilities": [
+    "Design, build, test, and deploy customer-facing features across Clearline's web app and AI workflow platform.",
+    "Work across backend APIs, data pipelines, and front-end UI used by dealership teams to manage calls, texts, appointments, and lead follow-ups.",
+    "Build and iterate on AI-driven workflows (voice, SMS, lead follow-up logic, routing, scoring).",
+    "Use LLM tools to accelerate development and testing.",
+    "Write unit and integration tests.",
+    "Help monitor production performance and reliability for systems that dealerships rely on daily to capture revenue.",
+    "Tackle 1-day fixes, 1-week features, and small end-to-end projects.",
+    "Participate in stand-ups, product reviews, and shipping cycles.",
+    "Sit in on dealer calls, demos, and onboarding sessions to understand real-world workflows and pain points - then translate that into shipped improvements.",
+    "Ship code to production, monitor real usage, debug issues, and iterate based on live customer behavior."
+  ],
+  "company_research": {
+    "company_size": "11-50 employees",
+    "industry": "Manufacturing (Clearline Technologies), Business Services; Software Testing; Advertising Networks (ClearLine)",
+    "recent_news": null,
+    "culture_signals": "Fast-moving startup, early stage hyper growth startup, small, senior engineering team, learn and do more in 4 months than in 1 year elsewhere, influential team member, inspirational and can-do attitude is contagiously threaded throughout the culture, hub for innovation, strong management team, contributing exceptional value to their customers.",
+    "additional_context": "Clearline builds an AI operating system for dealership revenue. Focuses on capturing, routing, and converting customer interactions. Looking for interns to work on real products in a startup environment. The job posting mentions Clearline. One web search result points to 'Clearline Technologies' which focuses on manufacturing and rooftop platforms, employing around 20 people. Another result for 'ClearLine' mentions business services, software testing, and advertising networks with revenue of $5.7 Million. Given the job description's focus on AI, software, and startups, the 'Clearline' company described in the third search result (business services, software testing, advertising networks) or a similarly described software-focused entity is more likely the employer, although the initial search results were mixed in identifying the specific company's industry."
+  }
+}

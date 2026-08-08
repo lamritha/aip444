@@ -1,0 +1,48 @@
+{
+  "job_title": "Co-op, Software Developer (Fall Work Term)",
+  "company_name": "Ricoh USA, Inc.",
+  "location": "Kitchener, ON, Canada",
+  "remote_status": "on-site",
+  "posting_age_days": 3,
+  "required_skills": [
+    "student seeking co-op",
+    "object-oriented programming",
+    "Java/C# development",
+    "Core Java",
+    "Java OEM",
+    "Android",
+    "iOS technologies"
+  ],
+  "preferred_skills": [
+    "Eclipse",
+    "Ant",
+    "Maven",
+    "SVN",
+    "Apache Tomcat",
+    "scalable cloud architectures",
+    "server architectures"
+  ],
+  "experience_level": "student",
+  "education_requirements": "Currently in a university degree or college diploma, preferably in Computer Science or an equivalent field.",
+  "salary_range": {
+    "min": 40000,
+    "max": 45000,
+    "currency": "CAD",
+    "raw": "$40,000 - $45,000"
+  },
+  "key_responsibilities": [
+    "Work as independently and/or as a part of a development team, under the direction of a software development manager or a senior software developer",
+    "Analyze requirements or specification documents",
+    "Perform detail design and coding as required",
+    "Complete unit and/or integration testing (as necessary) to ensure correct functionality",
+    "Create technical documentation describing your design and implementation",
+    "Investigate and respond to technical enquiries from external software developers"
+  ],
+  "company_research": {
+    "company_size": "10001+ employees",
+    "industry": "IT Services and IT Consulting",
+    "recent_news": null,
+    "culture_signals": "Team-driven, passion and purpose, information seekers, customer-obsessed collaborators, high-performance team, commitment to excellence, connects people and technology, creates outstanding customer experiences, delivers innovation, empowers digital workplaces, enabling individuals to work smarter from any location, harness the power of information, people are at the core, seek out and inspiring diversity, collaboration is encouraged.",
+    "additional_context": "Ricoh USA, Inc. is a global solutions provider and partner that connects people and technology. They are a leader in information management and digital services, creating competitive advantage for over 1.4 million businesses globally. They have approximately 15,000+ team members across North America and nearly 80,000 globally. The company offers benefits such as medical, dental, life, and disability insurance, a retirement plan with company matching, tuition assistance, paid vacation, and holidays."
+  }
+}

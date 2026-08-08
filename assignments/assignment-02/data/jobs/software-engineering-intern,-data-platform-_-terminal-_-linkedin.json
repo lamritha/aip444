@@ -1,0 +1,66 @@
+{
+  "job_title": "Software Engineering Intern, Data Platform",
+  "company_name": "Terminal",
+  "location": "Toronto, ON",
+  "remote_status": "hybrid",
+  "posting_age_days": 1,
+  "required_skills": [
+    "software patterns",
+    "data structures",
+    "algorithms",
+    "system design",
+    "Java",
+    "large-scale data systems",
+    "real-time processing",
+    "problem-solving",
+    "team collaboration",
+    "streaming data pipelines",
+    "batch data pipelines",
+    "scalable storage solutions",
+    "data quality",
+    "data processing",
+    "code reviews",
+    "clean code",
+    "maintainable code",
+    "customer support",
+    "cross-functional collaboration",
+    "AI tools"
+  ],
+  "preferred_skills": [
+    "databases",
+    "distributed systems",
+    "data processing",
+    "data pipelines",
+    "stream processing",
+    "AWS",
+    "GCP",
+    "Azure",
+    "Kafka",
+    "Flink",
+    "Spark"
+  ],
+  "experience_level": "Internship",
+  "education_requirements": "Currently pursuing an undergraduate degree in Computer Science or a related field. Completed at least 2 full years of undergrad (3rd+ year). Completed at least 1 prior professional software internship.",
+  "salary_range": {
+    "min": 60000,
+    "max": 60000,
+    "currency": "CAD",
+    "raw": "CA$60K/yr - CA$60K/yr"
+  },
+  "key_responsibilities": [
+    "Build and optimize streaming and batch data pipelines that support our core product",
+    "Work on scalable storage solutions for handling petabytes of IoT and time-series data",
+    "Support implementation of data quality and data processing capabilities",
+    "Participate in code reviews and learn best practices for writing clean, maintainable code",
+    "Directly support and engage with our customers and partners",
+    "Collaborate with cross-functional teams to understand requirements and deliver solutions",
+    "Gain hands-on experience with modern data infrastructure technologies and AI tools"
+  ],
+  "company_research": {
+    "company_size": "Over 100 people clicked apply (from job posting, exact size not specified in search results)",
+    "industry": "Telematics data infrastructure, commercial fleet industry, insurance technology",
+    "recent_news": "Raised $20 million in Series A financing led by Battery Ventures in July 2026. Backed by Y Combinator, Golden Ventures, Penske Transportation Solutions, Intact Private Capital, and others.",
+    "culture_signals": "Team works together in person in Toronto, combining early-stage speed with late-stage maturity. Emphasis on scalable data platforms, petabyte-scale data processing, and modern data infrastructure. Committed to an accessible hiring process.",
+    "additional_context": "Founded in 2023. Powers Terminal's API and handles data streaming, storage, and analytics at petabyte scale. Supports 330+ telematics providers."
+  }
+}

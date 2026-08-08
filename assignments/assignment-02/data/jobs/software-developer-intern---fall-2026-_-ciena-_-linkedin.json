@@ -1,0 +1,70 @@
+{
+  "job_title": "Software Developer Intern - Fall 2026",
+  "company_name": "Ciena",
+  "location": "Ottawa, ON",
+  "remote_status": "on-site",
+  "posting_age_days": 1,
+  "required_skills": [
+    "coding concepts",
+    "programming structures",
+    "independent work",
+    "collaborative work",
+    "AI tools",
+    "AI technologies",
+    "embedded software",
+    "Agile development practices",
+    "software quality",
+    "software issues",
+    "modern development workflows",
+    "real-time embedded systems"
+  ],
+  "preferred_skills": [
+    "C",
+    "C++",
+    "Python",
+    "Bash",
+    "Java",
+    "git",
+    "Bitbucket",
+    "Gerrit",
+    "Jira",
+    "Google Test",
+    "JUnit",
+    "Robot",
+    "PyTest",
+    "AI",
+    "GitHub Copilot",
+    "test case generation",
+    "AI agents",
+    "AI workflows",
+    "debugging tools",
+    "gdb",
+    "real-time software environments",
+    "embedded software environments",
+    "automated testing"
+  ],
+  "experience_level": "Intern",
+  "education_requirements": "Actively enrolled in a degree program in Engineering or Computer Science",
+  "salary_range": {
+    "min": 25,
+    "max": 35,
+    "currency": "CAD",
+    "raw": "$25.00 - $35.00"
+  },
+  "key_responsibilities": [
+    "Contribute to coding assignments that enhance embedded platform and application software",
+    "Create and execute tests to validate new capabilities",
+    "Collaborate with team members following Agile development practices",
+    "Participate in code reviews and apply feedback to improve software quality",
+    "Troubleshoot and resolve software issues",
+    "Learn and apply modern development workflows and tools",
+    "Gain hands-on experience with real-time embedded systems"
+  ],
+  "company_research": {
+    "company_size": "5001-10000 employees",
+    "industry": "Telecommunications",
+    "recent_news": "Ciena is the global leader in high-speed connectivity and is building advanced networks to support exponential growth in bandwidth demand, empowering customers, partners, and communities to thrive in the AI era. The company has expertise in networking systems, interconnects, and automation software. In Q2, Ciena reported strong earnings and revenue growth, with EPS of $1.64 vs. $1.46 estimate and revenue up 39.5% YoY. Citi named Ciena a top pick in communications equipment, although the stock has pulled back from recent highs due to cautious sentiment around AI infrastructure.",
+    "culture_signals": "Ciena is committed to a people-first approach with a culture focused on prioritizing a flexible work environment that empowers individual growth, well-being, and belonging. They aim to lead with humanity, driving business priorities alongside meaningful social, community, and societal impact. The company is committed to building and fostering an environment where employees feel respected, valued, and heard, and they do not tolerate any form of discrimination.",
+    "additional_context": "Founded in 1992, Ciena Corporation is an American optical networking systems and software company headquartered in Hanover, Maryland. As of November 2025, the company had revenues of $4.8 billion and over 9,000 employees. Gary Smith has been president and CEO since 2003. Ciena's customers include major telecommunications carriers like AT&T, Deutsche Telekom, and Verizon. The company has operations in India, with a campus in Gurgaon focusing on R&D and manufacturing. The engineering software and QA department appears to have the highest employee count in Ciena India. Ciena offers various benefits including free meals and other perks."
+  }
+}

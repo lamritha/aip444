@@ -1,0 +1,65 @@
+{
+  "job_title": "Software Developer - C++ (Co-op)",
+  "company_name": "Apera AI",
+  "location": "Vancouver, BC",
+  "remote_status": "on-site",
+  "posting_age_days": 5,
+  "required_skills": [
+    "C++",
+    "object-oriented design",
+    "memory management",
+    "linear algebra",
+    "vectors",
+    "3D transforms",
+    "Git",
+    "software projects",
+    "robotic vision",
+    "robotics",
+    "AI",
+    "machine vision",
+    "real-time",
+    "image processing",
+    "performance profiling",
+    "Qt",
+    "OpenCV",
+    "multithreading"
+  ],
+  "preferred_skills": [
+    "Linux development environments",
+    "ROS",
+    "PCL",
+    "networking",
+    "Python"
+  ],
+  "experience_level": "Co-op",
+  "education_requirements": null,
+  "salary_range": {
+    "min": 3600,
+    "max": 4500,
+    "currency": "CAD",
+    "raw": "CAD $3,600 to $4,500 per month"
+  },
+  "key_responsibilities": [
+    "Develop and Ship Core C++ Features for Apera Vue",
+    "Contribute a discrete feature or performance improvement to the Apera Vue application",
+    "Support Robotic Integration and Image Processing",
+    "Assist in testing and debugging real-world vision system behavior with robotic systems in the lab",
+    "Identify edge cases and performance issues",
+    "Suggest and test code-level improvements",
+    "Improve Code Quality through Testing and Review",
+    "Participate in unit testing, test coverage expansion, and refactoring",
+    "Contribute to automated testing infrastructure",
+    "Participate in daily standups, planning, and code review sessions",
+    "Implement C++ modules that interact with vision data, robot pose data, or internal image pipelines",
+    "Run and validate code in a live robotic lab environment",
+    "Write tests and help investigate edge cases or bugs in production builds",
+    "Contribute to documentation and developer notes"
+  ],
+  "company_research": {
+    "company_size": null,
+    "industry": "Robotics, AI, Machine Vision, Industrial Automation",
+    "recent_news": "Apera AI wins 2025 Frost & Sullivan Technology Innovation Leadership Award. Ranked 10th on Deloitte's 2025 Technology Fast 50 with 5,264% growth.",
+    "culture_signals": "Highly technical with a strong engineering team. Move quickly and iterate often, balancing R&D depth with industry-level engineering. Blend scientific exploration with product execution. Value clean, well-documented code and thoughtful collaboration. Enjoy learning by building and testing in the real world. Curious about how software meets robotics, perception, and physical action.",
+    "additional_context": "Apera AI helps manufacturers make factories more flexible and productive. Their software provides robots with 4D Vision for grasping objects with human-like capability. Their portfolio includes Vue (4D Vision software), Forge (simulation and AI training studio), and VuePod (bin-picking cell). They work with leading automotive OEMs and Tier 1 suppliers."
+  }
+}

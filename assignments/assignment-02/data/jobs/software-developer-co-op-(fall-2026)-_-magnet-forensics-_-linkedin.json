@@ -1,0 +1,46 @@
+{
+  "job_title": "Software Developer Co-op (Fall 2026)",
+  "company_name": "Magnet Forensics",
+  "location": "Ottawa, ON",
+  "remote_status": "hybrid",
+  "posting_age_days": 7,
+  "required_skills": [
+    "object-oriented programming",
+    "Java",
+    "JavaScript",
+    "C#",
+    "C++",
+    "Python",
+    "problem solving",
+    "collaboration",
+    "accountability",
+    "ownership"
+  ],
+  "preferred_skills": [
+    "technical challenges",
+    "continuous learning"
+  ],
+  "experience_level": "Internship",
+  "education_requirements": "Student working towards a degree in Computer Science, Computer Engineering, Software Engineering or a related discipline",
+  "salary_range": {
+    "min": 22.01,
+    "max": 33.81,
+    "currency": "CAD",
+    "raw": "$22.01 - $33.81 CAD per hour"
+  },
+  "key_responsibilities": [
+    "getting comfortable with the code",
+    "working through bugs",
+    "working through basic features",
+    "writing code that will be seen in production",
+    "given more complex features",
+    "demonstrate Magnet CODE (CARE, OWN, DEDICATE, EVOLVE)"
+  ],
+  "company_research": {
+    "company_size": "1001-5000 employees",
+    "industry": "Software Development",
+    "recent_news": null,
+    "culture_signals": "Magnet Forensics is a global leader in digital investigative software. They emphasize innovation, customer protection, and global presence. They foster a collaborative environment with a focus on learning and development, integrity, and diversity of thought. They also have a hybrid-flexible work approach and core values around CARE (Care, Accountability, Dedication, Evolution).",
+    "additional_context": "Founded in 2010, Magnet Forensics develops digital investigation solutions for cyberattacks and digital crimes. They serve thousands of customers globally in over 100 countries. The company has had multiple funding rounds, including a Post IPO secondary round in 2022. They operate globally with employees based around the world. They emphasize making a difference in the world through their work. They do not use AI for screening, assessing, or selecting applicants. They are an Equal Opportunity Employer."
+  }
+}

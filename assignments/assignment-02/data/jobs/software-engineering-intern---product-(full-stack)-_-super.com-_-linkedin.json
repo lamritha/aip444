@@ -1,0 +1,57 @@
+{
+  "job_title": "Software Engineering Intern - Product (Full-Stack)",
+  "company_name": "Super.com",
+  "location": "Canada",
+  "remote_status": "remote",
+  "posting_age_days": 0,
+  "required_skills": [
+    "Python",
+    "FastAPI",
+    "React",
+    "TypeScript",
+    "Postgres",
+    "Redis",
+    "Gitlab",
+    "AWS",
+    "Kubernetes",
+    "Datadog",
+    "Amplitude",
+    "Snowflake",
+    "web development",
+    "modern frontend JS framework",
+    "web servers",
+    "frontend",
+    "backend",
+    "AI",
+    "AI tools"
+  ],
+  "preferred_skills": [
+    "Vue",
+    "Angular",
+    "startup environment",
+    "scaleup environment"
+  ],
+  "experience_level": "Intern",
+  "education_requirements": null,
+  "salary_range": {
+    "min": 20,
+    "max": 39,
+    "currency": "CAD",
+    "raw": "20 CAD/hr - 39 CAD/hr"
+  },
+  "key_responsibilities": [
+    "Ship technically challenging projects end-to-end in a fast-paced, iterative environment",
+    "Propel the business forward, and recognize the impact of your work on the company’s business metrics and user experience",
+    "Own features, services, caches, and databases, including: deployment, monitoring, debugging, and testing",
+    "Write production-ready, well-tested code",
+    "Be data-driven and close to the customer, performing experiments for nearly everything you launch",
+    "Work on a combination of frontend and backend work across multiple services and codebases"
+  ],
+  "company_research": {
+    "company_size": "201-500 employees",
+    "industry": "Financial Services",
+    "recent_news": null,
+    "culture_signals": "Fast-paced, high-growth tech company that cares about its people and career progression. Invests in learning, celebrates bold ideas, and creates pathways for career growth. Remote-first company with a fun, collaborative, and well-connected culture. Leverages cutting-edge AI technology in its hiring process.",
+    "additional_context": "Super.com is an all-in-one app to save, earn and put more money in your pocket, with flagship products in travel and fintech. Formerly Snapcommerce/SnapTravel, founded in 2016. Has processed over $2B in sales. Offers internship scholarship program. Employees are encouraged to ask questions, try new things, and grow through hands-on experience. Offers various allowances for remote employees (home office setup, UberEats, learning & development, fitness/wellness)."
+  }
+}

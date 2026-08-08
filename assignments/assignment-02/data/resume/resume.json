@@ -1,0 +1,144 @@
+{
+  "full_name": "Amritha Lingeswaran",
+  "contact": {
+    "email": "amriling06@gmail.com",
+    "phone": "437-425-0196",
+    "location": "9 Shandon Drive, Scarborough, ON, M1R 4M4",
+    "linkedin": "linkedin.com/in/amritha-lingeswaran",
+    "github": "github.com/lamritha"
+  },
+  "hard_skills": [
+    "C",
+    "C++",
+    "Python",
+    "JavaScript",
+    "Java",
+    "React",
+    "Next.js",
+    "Node.js",
+    "Express.js",
+    "HTML5",
+    "CSS3",
+    "REST APIs",
+    "MongoDB",
+    "PostgreSQL",
+    "Oracle SQL",
+    "Git",
+    "VS Code",
+    "IntelliJ IDEA",
+    "Cursor IDE",
+    "Visual Paradigm",
+    "Docker",
+    "Vercel",
+    "GitHub",
+    "AWS"
+  ],
+  "soft_skills": [
+    "Communication",
+    "Adaptability",
+    "Problem-solving",
+    "Time management",
+    "Analytical thinking"
+  ],
+  "work_experience": [
+    {
+      "company": "Tutorcraft",
+      "role": "Math Tutor",
+      "duration": "Dec 2024 – Present",
+      "responsibilities": [
+        "Tutor students across multiple grade levels in mathematics, breaking down complex concepts into clear, workable steps.",
+        "Built strong communication and feedback skills by adapting explanations and teaching methods on the fly based on each student's gaps."
+      ],
+      "achievements": []
+    },
+    {
+      "company": "Belvoir College International",
+      "role": "Physics Teacher",
+      "duration": "Nov 2023 – Jul 2024",
+      "responsibilities": [
+        "Delivered structured lessons in physics to Grade 11 and 12 students, designed assessments, and tracked progress over time.",
+        "Built lesson plans from scratch and learned quickly that clear structure and anticipating confusion matters as much in a classroom as in documentation."
+      ],
+      "achievements": []
+    },
+    {
+      "company": "Hiitech International",
+      "role": "Administrative Assistant",
+      "duration": "Jul 2023 – Nov 2023",
+      "responsibilities": [
+        "Managed office operations including data entry, record maintenance, scheduling, and handling email and phone inquiries in a professional, timely manner."
+      ],
+      "achievements": []
+    }
+  ],
+  "education": [
+    {
+      "institution": "Seneca Polytechnic",
+      "degree": "Advanced Diploma",
+      "field": "Computer Programming & Analysis",
+      "year": "Sep 2024 – Present",
+      "relevant_coursework": [
+        "Data Structures & Algorithms",
+        "Web Programming",
+        "Database Design",
+        "Object-Oriented Programming"
+      ]
+    }
+  ],
+  "certifications": [],
+  "projects": [
+    {
+      "name": "SweetScale — AI Dessert Recommendation Tool",
+      "description": "Built an AI-powered tool for dessert businesses that generates tiered recommendation plans based on budget, guest count, and event theme. Won 2nd place out of 12 teams in a 30-minute AI design sprint, delivering a fully functional prototype.",
+      "technologies": [
+        "React",
+        "Node.js",
+        "Gemini API"
+      ]
+    },
+    {
+      "name": "Book Search App",
+      "description": "Integrated the Open Library API to let users search by title, author, subject, and language. Implemented user authentication (login/registration) and a personal favourites system to save and manage books.",
+      "technologies": [
+        "React",
+        "Node.js",
+        "Express.js",
+        "MongoDB"
+      ]
+    },
+    {
+      "name": "Olympic Data Processing",
+      "description": "Cleaned and standardized athlete and competition datasets with inconsistent date formats across multiple files. Implemented caching to noticeably reduce processing time on repeated large dataset runs.",
+      "technologies": [
+        "Python"
+      ]
+    },
+    {
+      "name": "Project Management App",
+      "description": "Developed full CRUD functionality with session-based authentication and role-based authorization, supporting structured team workflows.",
+      "technologies": [
+        "Node.js",
+        "Express.js",
+        "EJS",
+        "PostgreSQL"
+      ]
+    }
+  ],
+  "keywords": [
+    "Software Developer",
+    "Full-stack",
+    "Cloud infrastructure",
+    "AI",
+    "AGile",
+    "REST API",
+    "Data Structures",
+    "Algorithms",
+    "Web Programming",
+    "Database Design",
+    "Object-Oriented Programming",
+    "President's Honor List",
+    "CRUD",
+    "Authentication",
+    "Authorization"
+  ]
+}
