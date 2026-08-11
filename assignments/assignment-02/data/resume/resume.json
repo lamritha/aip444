@@ -12,7 +12,7 @@
     "C++",
     "Python",
     "JavaScript",
-    "Java",
+    "Java*",
     "React",
     "Next.js",
     "Node.js",
@@ -28,17 +28,17 @@
     "IntelliJ IDEA",
     "Cursor IDE",
     "Visual Paradigm",
-    "Docker",
+    "Docker*",
     "Vercel",
     "GitHub",
-    "AWS"
+    "AWS*"
   ],
   "soft_skills": [
-    "Communication",
-    "Adaptability",
-    "Problem-solving",
-    "Time management",
-    "Analytical thinking"
+    "communication",
+    "feedback",
+    "adaptability",
+    "structured teaching",
+    "problem-solving"
   ],
   "work_experience": [
     {
@@ -46,20 +46,22 @@
       "role": "Math Tutor",
       "duration": "Dec 2024 – Present",
       "responsibilities": [
-        "Tutor students across multiple grade levels in mathematics, breaking down complex concepts into clear, workable steps.",
-        "Built strong communication and feedback skills by adapting explanations and teaching methods on the fly based on each student's gaps."
+        "Tutor students across multiple grade levels in mathematics, breaking down complex concepts into clear, workable steps."
       ],
-      "achievements": []
+      "achievements": [
+        "Built strong communication and feedback skills by adapting explanations and teaching methods on the fly based on each student's gaps."
+      ]
     },
     {
       "company": "Belvoir College International",
       "role": "Physics Teacher",
       "duration": "Nov 2023 – Jul 2024",
       "responsibilities": [
-        "Delivered structured lessons in physics to Grade 11 and 12 students, designed assessments, and tracked progress over time.",
-        "Built lesson plans from scratch and learned quickly that clear structure and anticipating confusion matters as much in a classroom as in documentation."
+        "Delivered structured lessons in physics to Grade 11 and 12 students, designed assessments, and tracked progress over time."
       ],
-      "achievements": []
+      "achievements": [
+        "Built lesson plans from scratch and learned quickly that clear structure and anticipating confusion matters as much in a classroom as in documentation."
+      ]
     },
     {
       "company": "Hiitech International",
@@ -126,19 +128,20 @@
   ],
   "keywords": [
     "Software Developer",
-    "Full-stack",
-    "Cloud infrastructure",
+    "full-stack",
+    "cloud infrastructure",
     "AI",
-    "AGile",
-    "REST API",
-    "Data Structures",
-    "Algorithms",
-    "Web Programming",
-    "Database Design",
-    "Object-Oriented Programming",
-    "President's Honor List",
+    "React",
+    "Node.js",
+    "Gemini API",
+    "Open Library API",
     "CRUD",
-    "Authentication",
-    "Authorization"
+    "authentication",
+    "authorization",
+    "Agile",
+    "CI/CD",
+    "REST API",
+    "Docker",
+    "AWS"
   ]
 }

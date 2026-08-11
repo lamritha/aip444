@@ -8,55 +8,62 @@ This report synthesizes patterns across the collected job postings, covering in-
 
 | Skill | Count | Percentage |
 | --- | ---: | ---: |
-| Python | 7 | 43.75% |
-| Java | 6 | 37.5% |
-| object-oriented programming | 4 | 25% |
-| C++ | 4 | 25% |
-| AI | 8 | 50% |
-| collaboration | 7 | 43.75% |
-| software development | 5 | 31.25% |
-| Git | 4 | 25% |
-| problem solving | 4 | 25% |
-| software engineering | 4 | 25% |
+| Python | 7 | 58.33% |
+| AI | 7 | 58.33% |
+| collaboration | 6 | 50% |
+| object-oriented programming | 5 | 41.67% |
+| software development | 5 | 41.67% |
+| Java | 5 | 41.67% |
+| Git | 5 | 41.67% |
+| problem-solving | 5 | 41.67% |
+| independent work | 5 | 41.67% |
+| C++ | 4 | 33.33% |
+| DevOps | 3 | 25% |
+| machine learning | 3 | 25% |
+| cloud platforms | 3 | 25% |
+| Kubernetes | 3 | 25% |
+| React | 3 | 25% |
+| LLMs | 3 | 25% |
 
 ## Experience & Education Requirements
 
 ### Experience Levels
 
-The majority of roles are for Interns or Co-op students, indicating a strong focus on entry-level talent and development programs.
+The majority of the positions are for Intern or Co-op roles, with a few explicitly listing 'student' or 'internship/co-op'.
 
 ### Education Patterns
 
-Most positions require students to be actively pursuing an undergraduate degree in Computer Science, Software Engineering, or a closely related field. Some postings specify being in their 3rd or 4th year of study, or having completed a certain number of credits.
+Most roles require candidates to be currently enrolled in a post-secondary program, typically in Computer Science, Software Engineering, Computer Engineering, or a related field. Some specify a preference for 3rd or 4th-year students.
 
 ## Salary Landscape
 
 - **Min:** 20 CAD
 - **Max:** 80000 CAD
-- **Average:** 47848.95 CAD
-- **Notes:** Salary ranges vary significantly, with hourly rates for interns ranging from $20-$39 CAD and some co-op positions offering annual salaries between $36,000 and $80,000 CAD. Some roles had unspecified salaries.
+- **Average:** 37486.87 CAD
+- **Notes:** Salary ranges vary significantly, with hourly rates for interns typically between $20-39 CAD/hr, and monthly/annual salaries for co-op terms ranging from approximately $3,600-$4,500 CAD/month up to $60,000-$80,000 CAD/year. Some postings did not provide salary information.
 
 ## Common Responsibilities
 
-- Developing software
-- Testing software
-- Collaborating with team members
-- Writing code
-- Troubleshooting issues
-- Contributing to documentation
+- Software development/coding
+- Testing and debugging
+- Collaboration with team members
+- Documentation
+- Problem-solving
+- Working with AI/ML technologies
 - Participating in code reviews
-- Learning new technologies
-- Working with AI tools/technologies
+- Learning and applying new technologies/workflows
 
 ## Company Culture & Industry Trends
 
-Companies often emphasize collaboration, learning, innovation, and a 'people-first' approach. Startups often highlight a fast-paced, high-growth environment where interns can make a significant impact. Larger, established companies tend to focus on inclusivity, diversity, and structured professional development.
+Companies emphasize collaboration, learning, innovation, and a 'people-first' approach. Many highlight diversity and inclusion. Some startups mention fast-paced environments and ownership, while larger corporations focus on structured development and global impact.
 
 ## Key Observations
 
-- A significant portion of the jobs are for 'Fall 2026' terms, indicating proactive hiring for upcoming co-op and internship cycles.
-- There is a strong emphasis on AI and Machine Learning skills across various industries, including software development, telecommunications, and insurance.
-- Hybrid and remote work options are available, but a considerable number of roles are still on-site, particularly for co-op positions.
-- Most roles require students to be currently enrolled in a relevant degree program, with a preference for Computer Science, Software Engineering, or related fields.
-- Companies are actively seeking candidates with strong foundational programming skills (Python, Java, C++, etc.) alongside an aptitude for problem-solving and collaboration.
-- Many postings highlight a fast-paced, iterative, and learning-oriented work environment, typical of tech startups and growth-stage companies.
+- Strong emphasis on AI and Machine Learning skills across multiple industries.
+- High demand for programming languages like Python, Java, and C++.
+- Cloud platforms and containerization technologies (e.g., Kubernetes) are frequently mentioned.
+- Many roles require or prefer experience with version control systems like Git.
+- Companies are increasingly integrating AI tools into the development process.
+- Hybrid and remote work options are available, though on-site roles are also prevalent.
+- Internship and co-op positions are widely offered, indicating a focus on talent development and entry-level recruitment.
+- Companies value collaboration, problem-solving, and adaptability in candidates.

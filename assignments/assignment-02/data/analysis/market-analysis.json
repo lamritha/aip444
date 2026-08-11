@@ -3,81 +3,112 @@
     {
       "skill": "Python",
       "count": 7,
-      "percentage": 43.75
-    },
-    {
-      "skill": "Java",
-      "count": 6,
-      "percentage": 37.5
-    },
-    {
-      "skill": "object-oriented programming",
-      "count": 4,
-      "percentage": 25
-    },
-    {
-      "skill": "C++",
-      "count": 4,
-      "percentage": 25
+      "percentage": 58.33
     },
     {
       "skill": "AI",
-      "count": 8,
-      "percentage": 50
+      "count": 7,
+      "percentage": 58.33
     },
     {
       "skill": "collaboration",
-      "count": 7,
-      "percentage": 43.75
+      "count": 6,
+      "percentage": 50
+    },
+    {
+      "skill": "object-oriented programming",
+      "count": 5,
+      "percentage": 41.67
     },
     {
       "skill": "software development",
       "count": 5,
-      "percentage": 31.25
+      "percentage": 41.67
+    },
+    {
+      "skill": "Java",
+      "count": 5,
+      "percentage": 41.67
     },
     {
       "skill": "Git",
+      "count": 5,
+      "percentage": 41.67
+    },
+    {
+      "skill": "problem-solving",
+      "count": 5,
+      "percentage": 41.67
+    },
+    {
+      "skill": "independent work",
+      "count": 5,
+      "percentage": 41.67
+    },
+    {
+      "skill": "C++",
       "count": 4,
+      "percentage": 33.33
+    },
+    {
+      "skill": "DevOps",
+      "count": 3,
       "percentage": 25
     },
     {
-      "skill": "problem solving",
-      "count": 4,
+      "skill": "machine learning",
+      "count": 3,
       "percentage": 25
     },
     {
-      "skill": "software engineering",
-      "count": 4,
+      "skill": "cloud platforms",
+      "count": 3,
+      "percentage": 25
+    },
+    {
+      "skill": "Kubernetes",
+      "count": 3,
+      "percentage": 25
+    },
+    {
+      "skill": "React",
+      "count": 3,
+      "percentage": 25
+    },
+    {
+      "skill": "LLMs",
+      "count": 3,
       "percentage": 25
     }
   ],
-  "experience_levels": "The majority of roles are for Interns or Co-op students, indicating a strong focus on entry-level talent and development programs.",
+  "experience_levels": "The majority of the positions are for Intern or Co-op roles, with a few explicitly listing 'student' or 'internship/co-op'.",
   "salary_summary": {
     "min": 20,
     "max": 80000,
-    "average": 47848.95,
+    "average": 37486.87,
     "currency": "CAD",
-    "notes": "Salary ranges vary significantly, with hourly rates for interns ranging from $20-$39 CAD and some co-op positions offering annual salaries between $36,000 and $80,000 CAD. Some roles had unspecified salaries."
+    "notes": "Salary ranges vary significantly, with hourly rates for interns typically between $20-39 CAD/hr, and monthly/annual salaries for co-op terms ranging from approximately $3,600-$4,500 CAD/month up to $60,000-$80,000 CAD/year. Some postings did not provide salary information."
   },
   "common_responsibilities": [
-    "Developing software",
-    "Testing software",
-    "Collaborating with team members",
-    "Writing code",
-    "Troubleshooting issues",
-    "Contributing to documentation",
+    "Software development/coding",
+    "Testing and debugging",
+    "Collaboration with team members",
+    "Documentation",
+    "Problem-solving",
+    "Working with AI/ML technologies",
     "Participating in code reviews",
-    "Learning new technologies",
-    "Working with AI tools/technologies"
+    "Learning and applying new technologies/workflows"
   ],
   "trends_and_observations": [
-    "A significant portion of the jobs are for 'Fall 2026' terms, indicating proactive hiring for upcoming co-op and internship cycles.",
-    "There is a strong emphasis on AI and Machine Learning skills across various industries, including software development, telecommunications, and insurance.",
-    "Hybrid and remote work options are available, but a considerable number of roles are still on-site, particularly for co-op positions.",
-    "Most roles require students to be currently enrolled in a relevant degree program, with a preference for Computer Science, Software Engineering, or related fields.",
-    "Companies are actively seeking candidates with strong foundational programming skills (Python, Java, C++, etc.) alongside an aptitude for problem-solving and collaboration.",
-    "Many postings highlight a fast-paced, iterative, and learning-oriented work environment, typical of tech startups and growth-stage companies."
+    "Strong emphasis on AI and Machine Learning skills across multiple industries.",
+    "High demand for programming languages like Python, Java, and C++.",
+    "Cloud platforms and containerization technologies (e.g., Kubernetes) are frequently mentioned.",
+    "Many roles require or prefer experience with version control systems like Git.",
+    "Companies are increasingly integrating AI tools into the development process.",
+    "Hybrid and remote work options are available, though on-site roles are also prevalent.",
+    "Internship and co-op positions are widely offered, indicating a focus on talent development and entry-level recruitment.",
+    "Companies value collaboration, problem-solving, and adaptability in candidates."
   ],
-  "company_culture_patterns": "Companies often emphasize collaboration, learning, innovation, and a 'people-first' approach. Startups often highlight a fast-paced, high-growth environment where interns can make a significant impact. Larger, established companies tend to focus on inclusivity, diversity, and structured professional development.",
-  "education_patterns": "Most positions require students to be actively pursuing an undergraduate degree in Computer Science, Software Engineering, or a closely related field. Some postings specify being in their 3rd or 4th year of study, or having completed a certain number of credits."
+  "company_culture_patterns": "Companies emphasize collaboration, learning, innovation, and a 'people-first' approach. Many highlight diversity and inclusion. Some startups mention fast-paced environments and ownership, while larger corporations focus on structured development and global impact.",
+  "education_patterns": "Most roles require candidates to be currently enrolled in a post-secondary program, typically in Computer Science, Software Engineering, Computer Engineering, or a related field. Some specify a preference for 3rd or 4th-year students."
 }

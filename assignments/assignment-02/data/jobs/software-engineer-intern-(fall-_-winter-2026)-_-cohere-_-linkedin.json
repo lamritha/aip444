@@ -5,35 +5,33 @@
   "remote_status": "remote",
   "posting_age_days": 7,
   "required_skills": [
-    "Python",
-    "Java",
-    "C++",
-    "JavaScript",
-    "TypeScript",
-    "React",
-    "Vue",
-    "Angular",
-    "Machine Learning",
+    "machine learning",
     "NLP",
-    "API",
-    "Data Pipelines",
-    "Crawlers",
-    "Storage",
-    "Filters",
-    "Scalable Services",
-    "Infrastructure",
+    "data pipelines",
+    "scalable services",
+    "infrastructure",
     "CI/CD",
-    "Dev Utilities",
-    "Technical Documentation",
-    "New Technologies"
+    "dev utilities",
+    "technical documentation",
+    "new technologies",
+    "performance",
+    "reliability",
+    "browsers",
+    "server code",
+    "API platform",
+    "crawlers",
+    "storage",
+    "filters",
+    "security features",
+    "Python"
   ],
   "preferred_skills": [
-    "Frontend Development",
-    "Backend Development",
-    "Full-stack Development",
-    "Infrastructure Development"
+    "Frontend",
+    "Backend",
+    "Full-stack",
+    "Infrastructure"
   ],
-  "experience_level": "Internship",
+  "experience_level": "Intern",
   "education_requirements": "Currently enrolled in a post-secondary program",
   "salary_range": {
     "min": null,
@@ -42,20 +40,24 @@
     "raw": "CA$0"
   },
   "key_responsibilities": [
-    "Shipping delightful experiences for user-facing products",
+    "Creating datasets for machine learning",
+    "Scaling the pods to serve our API",
+    "Building out new security features on our platform",
+    "Push code to production",
+    "Ship delightful experiences for our user-facing products",
     "Meticulously crafting code for browsers or server code",
-    "Building features for the API platform that directly impact users",
-    "Designing and implementing robust data pipelines (crawlers, storage, filters)",
-    "Designing and implementing scalable services or infrastructure for machine learning development",
-    "Building internal tooling (CI/CD, dev utilities) to move faster together",
-    "Building tech writing skills through maintaining and contributing to technical documentation, both internal and external facing",
-    "Keeping up with the cutting edge and adopting new technologies to improve performance and reliability across Cohere"
+    "Build features for the API platform that directly impact users",
+    "Design and implement robust data pipelines (crawlers, storage, filters)",
+    "Design and implement scalable services or infrastructure for machine learning development",
+    "Build internal tooling (CI/CD, dev utilities) to move faster together",
+    "Build tech writing skills through maintaining and contributing to technical documentation, both internal and external facing",
+    "Keep up with the cutting edge and adopt new technologies to improve performance and reliability across Cohere"
   ],
   "company_research": {
     "company_size": "201-500 employees",
-    "industry": "Software Development, Business/Productivity Software, Natural Language Processing, Artificial Intelligence & Machine Learning",
-    "recent_news": "In April 2026, Cohere agreed to a Series E funding round of $600M.",
-    "culture_signals": "Security-first enterprise AI company, building cutting-edge foundation AI models and end-to-end products, passionate about their craft, remote-friendly with offices globally, fosters autonomy and ownership, inclusive work environment, may use AI-enabled tools for screening.",
-    "additional_context": "Headquartered in Toronto, Canada, with key offices in London, New York City, San Francisco, Montreal, Paris, Berlin, and Seoul. Founded in 2019. Focuses on large language models and AI products for regulated industries. The company is privately held and has received significant venture capital funding."
+    "industry": "Software Development, Natural Language Processing, Artificial Intelligence",
+    "recent_news": "In March 2024, it was reported that Cohere had an annualized revenue run rate of $22 million and in July 2024 it was reported they received $500 million in funding from investors including Cisco, AMD and Fujitsu at a valuation of $5.5 billion. In December 2024, Cohere received $240 million in public funding from the Canadian government as part of the Canadian Sovereign AI Compute Strategy to support the construction of a domestic AI data center. Cohere hits US$6.8-billion valuation and snags Meta's former AI head. From January to May 2025, Cohere doubled its annualized revenue to US$100 million thanks to a growing enterprise list.",
+    "culture_signals": "Security-first enterprise AI company, building cutting-edge foundation AI models and end-to-end products. Obsessed over what they build, passionate about their craft. Global technology company. Remote-friendly. Emphasis on inclusivity and equal opportunities. May use AI-enabled tools to screen and assess applicants.",
+    "additional_context": "Headquartered in Toronto with key offices in London, New York City, San Francisco, Montreal, Paris, Berlin and Seoul. Specializes in large language models and AI products for regulated industries (finance, healthcare, manufacturing, energy, public sector). Founded in 2019 by Aidan Gomez, Ivan Zhang, and Nick Frosst. Partnered with Royal Bank of Canada to develop an AI platform for financial services. Around 85% of business comes from private-sector deals."
   }
 }
