@@ -1,44 +1,41 @@
-// src/decode.ts
-import { DataURI } from "./types.js";
+import { promises as fs } from 'fs';
+import { MediaTypeSchema, DataURISchema, getCategory, DataURI } from './types.js';
 
-/**
- * Parses a Data URI string into its components.
- *
- * @param uri - A complete Data URI string
- *   (e.g. "data:image/png;base64,iVBOR...")
- * @returns A DataURI object with parsed components
- * @throws Error if the string is not a valid Data URI
- * @throws Error if the MIME type is unsupported
- * @throws Error if the Base64 content is invalid
- */
 export function parseDataURI(uri: string): DataURI {
-  // TODO: implement
-  throw new Error("Not implemented");
+  if (!uri.startsWith('data:')) {
+    throw new Error('Invalid Data URI: missing "data:" prefix');
+  }
+
+  const base64Index = uri.indexOf(';base64,');
+  if (base64Index === -1) {
+    throw new Error('Invalid Data URI: missing ";base64," separator');
+  }
+
+  const mediaType = uri.substring(5, base64Index);
+  const base64 = uri.substring(base64Index + 8);
+
+  let validMediaType;
+  try {
+    validMediaType = MediaTypeSchema.parse(mediaType);
+  } catch {
+    throw new Error(`Unsupported MIME type: ${mediaType}`);
+  }
+
+  const category = getCategory(validMediaType);
+  const result = { mediaType: validMediaType, category, base64, raw: uri };
+  return DataURISchema.parse(result);
 }
 
-/**
- * Decodes a Data URI string back into raw binary data.
- *
- * @param uri - A complete Data URI string
- * @returns A Buffer containing the decoded binary data
- * @throws Error if the URI is invalid
- */
 export function decodeToBuffer(uri: string): Buffer {
-  // TODO: implement
-  throw new Error("Not implemented");
+  const { base64 } = parseDataURI(uri);
+  try {
+    return Buffer.from(base64, 'base64');
+  } catch {
+    throw new Error('Invalid Base64 content in Data URI');
+  }
 }
 
-/**
- * Decodes a Data URI and writes the result to a file.
- *
- * @param uri - A complete Data URI string
- * @param outputPath - Where to write the decoded file
- * @throws Error if the URI is invalid
- */
-export async function decodeToFile(
-  uri: string,
-  outputPath: string,
-): Promise<void> {
-  // TODO: implement
-  throw new Error("Not implemented");
+export async function decodeToFile(uri: string, outputPath: string): Promise<void> {
+  const buffer = decodeToBuffer(uri);
+  await fs.writeFile(outputPath, buffer);
 }
