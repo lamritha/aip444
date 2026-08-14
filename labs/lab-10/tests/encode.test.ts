@@ -79,4 +79,16 @@ describe("encodeBuffer", () => {
     const data = Buffer.from("");
     expect(() => encodeBuffer(data, "image/png")).toThrow();
   });
+
+  it("encodes a file from a path with spaces correctly", async () => {
+    const { mkdirSync, writeFileSync, rmSync } = await import("fs");
+    const dirWithSpaces = path.join(FIXTURES, "dir with spaces");
+    mkdirSync(dirWithSpaces, { recursive: true });
+    const filePath = path.join(dirWithSpaces, "test.png");
+    const { readFileSync } = await import("fs");
+    writeFileSync(filePath, readFileSync(path.join(FIXTURES, "test.png")));
+    const result = await encodeFile(filePath);
+    expect(result.mediaType).toBe("image/png");
+    rmSync(dirWithSpaces, { recursive: true });
+  });
 });

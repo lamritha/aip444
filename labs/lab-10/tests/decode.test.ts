@@ -80,4 +80,19 @@ describe("decodeToFile", () => {
       decodeToFile("not-a-uri", path.join(FIXTURES, "output.png")),
     ).rejects.toThrow();
   });
+
+  it("decodes a Data URI with newlines in Base64 payload", () => {
+    const uriWithNewlines = VALID_PNG_URI.replace(
+      /;base64,(.+)$/,
+      (_, b64) => `;base64,${b64.slice(0, 10)}\n${b64.slice(10)}`,
+    );
+    const buffer = decodeToBuffer(uriWithNewlines);
+    expect(buffer).toBeInstanceOf(Buffer);
+    expect(buffer.length).toBeGreaterThan(0);
+  });
+
+  it("throws for a Data URI with truncated Base64", () => {
+    const truncatedURI = "data:image/png;base64,iVBORw0KGgo";
+    expect(() => decodeToBuffer(truncatedURI)).toThrow();
+  });
 });
